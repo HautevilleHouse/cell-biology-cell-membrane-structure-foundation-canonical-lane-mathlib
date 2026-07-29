@@ -1,0 +1,21 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.CellBiologyCellMembraneStructureFoundationCanonicalLaneLean.MembraneLipidBilayer
+import HautevilleHouse.CellBiologyCellMembraneStructureFoundationCanonicalLaneLean.TransmembraneProteinTransport
+import HautevilleHouse.CellBiologyCellMembraneStructureFoundationCanonicalLaneLean.MembraneReceptorSignaling
+import HautevilleHouse.CellBiologyCellMembraneStructureFoundationCanonicalLaneLean.MembraneFusion
+
+namespace HautevilleHouse
+namespace CellBiologyCellMembraneStructureFoundationCanonicalLaneLean
+
+structure CellMembraneAdmittedObject where
+  lipidBilayer : MembranLipidBilayer
+  transport : TransmembraneProteinTransport lipidBilayer
+  signaling : MembraneReceptorSignaling lipidBilayer
+  fusion : MembraneFusion lipidBilayer
+  bilayerClosed : MembranLipidBilayerClosed lipidBilayer
+  transportClosed : TransmembraneProteinTransportClosed transport
+  signalingClosed : MembraneReceptorSignalingClosed signaling
+  fusionClosed : MembraneFusionClosed fusion
+
+end CellBiologyCellMembraneStructureFoundationCanonicalLaneLean
+end HautevilleHouse
